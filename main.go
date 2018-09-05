@@ -26,15 +26,15 @@ func letsEncrypt() {
 
 	key, err := readKey()
 	if err != nil {
-		fmt.Println("[ENCRYPT] Please insert an integer next time.")
+		fmt.Println("[ENCRYPT] FAIL! Please insert an integer next time.")
 		return
 	}
 
-	fmt.Print("[ENCRYPT] Enter your text (string): ")
+	fmt.Print("[ENCRYPT] Enter your text (string):")
 
 	txt, err := readString()
 	if err != nil {
-		fmt.Println("[ENCRYPT] Please insert an string next time.")
+		fmt.Println("[ENCRYPT] FAIL! Please insert an string next time.")
 		return
 	}
 
@@ -48,19 +48,19 @@ func letsEncrypt() {
 }
 
 func letsDecrypt() {
-	fmt.Print("[DECRYPT] Enter your key (int): ")
+	fmt.Print("[DECRYPT] Enter your key (int):")
 
 	key, err := readKey()
 	if err != nil {
-		fmt.Println("[DECRYPT] Please insert an integer next time.")
+		fmt.Println("[DECRYPT] FAIL! Please insert an integer next time.")
 		return
 	}
 
-	fmt.Print("[DECRYPT] Enter your text (string): ")
+	fmt.Print("[DECRYPT] Enter your text (string):")
 
 	txt, err := readString()
 	if err != nil {
-		fmt.Println("[DECRYPT] Please insert an string next time.")
+		fmt.Println("[DECRYPT] FAIL! Please insert an string next time.")
 		return
 	}
 
